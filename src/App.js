@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+
+
 import './App.css';
+import AudioPlay from './AudioPlay';
+import InputUseRef from './InputUseRef';
+import PreviousState from './PreviousState';
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className='container'>
+        <h2>Example 1</h2>
+        <InputUseRef />
+      </div>
+
+      <div className='container'>
+        <h2>Example 2</h2>
+        <PreviousState />
+      </div>
+
+      <div className="container">
+        <h2>Example 3</h2>
+        <AudioPlay />
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
